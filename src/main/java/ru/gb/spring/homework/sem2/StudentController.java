@@ -37,14 +37,6 @@ public class StudentController {
     }
 
     /**
-     * 3.4 GET /group/{groupName}/student - получить всех студентов группы
-     */
-    @GetMapping("/group/{groupName}/student")
-    public List<Student> getStudentsByGroup(@PathVariable("groupName") String group) {
-        return repository.getByGroup(group);
-    }
-
-    /**
      * 3.2 GET /student - получить всех студентов
      */
     @GetMapping

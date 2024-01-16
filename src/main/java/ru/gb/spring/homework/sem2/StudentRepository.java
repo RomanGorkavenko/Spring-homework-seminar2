@@ -25,13 +25,6 @@ public class StudentRepository {
                 .collect(Collectors.toCollection(ArrayList::new));
     }
 
-    public List<Student> getByGroup(String group) {
-        return students.stream()
-                .filter(it -> Objects.equals(it.getGroupName().getTitle(), group))
-                .toList();
-
-    }
-
     /**
      * 3.3 GET /student/search?name='studentName' - получить список студентов, чье имя содержит подстроку studentName
      */
